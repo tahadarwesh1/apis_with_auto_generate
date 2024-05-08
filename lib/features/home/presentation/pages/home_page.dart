@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:apis_with_auto_generate/di.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -20,6 +22,7 @@ class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    log('HomePage build');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Objects'),
