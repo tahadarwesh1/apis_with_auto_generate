@@ -1,18 +1,6 @@
-import 'app_constants.dart';
-import 'models/object_model.dart';
-import 'package:dio/dio.dart' hide Headers;
+import 'package:apis_with_auto_generate/core/network/log_interceptor.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:retrofit/retrofit.dart';
-
-part 'api_services.g.dart';
-
-@RestApi(baseUrl: AppConstants.baseUrl)
-abstract class ApiServices {
-  factory ApiServices(Dio dio, {String baseUrl}) = _ApiServices;
-
-  @GET("objects")
-  Future<List<ObjectModel>> getObjects();
-}
 
 class DioService {
   late final Dio dio;
@@ -33,7 +21,7 @@ class DioService {
     // ..options.headers = {};
 
     if (kDebugMode) {
-      dio.interceptors.add(LogInterceptor());
+      dio.interceptors.add(LoggerInterceptor());
     }
     return dio;
   }

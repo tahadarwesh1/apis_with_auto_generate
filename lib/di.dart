@@ -1,17 +1,21 @@
-import 'api_services.dart';
-import 'app_constants.dart';
-import 'cubit/my_cubit.dart';
-import 'my_repo.dart';
 import 'package:get_it/get_it.dart';
 
-class Injector {
+import 'core/api_service/api_services.dart';
+import 'core/app_constants.dart';
+import 'core/network/dio_service.dart';
+import 'features/home/data/di/home_di.dart';
+
   final getIt = GetIt.instance;
 
-  void setupDependencies() {
+  void setUpServiceLocator() {
+  setUpHomeDependencies();
+  setupGeneralDependencies();
+}
+
+  void setupGeneralDependencies() {
     getIt.registerSingleton<DioService>(DioService());
+
     getIt.registerSingleton<ApiServices>(
         ApiServices(getIt<DioService>().dio, baseUrl: AppConstants.baseUrl));
-    getIt.registerSingleton<MyRepo>(MyRepo(getIt<ApiServices>()));
-    getIt.registerSingleton<MyCubit>(MyCubit(getIt<MyRepo>()));
   }
-}
+

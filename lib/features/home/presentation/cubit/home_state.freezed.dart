@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'my_state.dart';
+part of 'home_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$MyState {
+mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
@@ -69,15 +69,15 @@ mixin _$MyState {
 }
 
 /// @nodoc
-abstract class $MyStateCopyWith<$Res> {
-  factory $MyStateCopyWith(MyState value, $Res Function(MyState) then) =
-      _$MyStateCopyWithImpl<$Res, MyState>;
+abstract class $HomeStateCopyWith<$Res> {
+  factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
+      _$HomeStateCopyWithImpl<$Res, HomeState>;
 }
 
 /// @nodoc
-class _$MyStateCopyWithImpl<$Res, $Val extends MyState>
-    implements $MyStateCopyWith<$Res> {
-  _$MyStateCopyWithImpl(this._value, this._then);
+class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
+    implements $HomeStateCopyWith<$Res> {
+  _$HomeStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -94,7 +94,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$MyStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$HomeStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -108,7 +108,7 @@ class _$InitialImpl implements Initial {
 
   @override
   String toString() {
-    return 'MyState.initial()';
+    return 'HomeState.initial()';
   }
 
   @override
@@ -195,7 +195,7 @@ class _$InitialImpl implements Initial {
   }
 }
 
-abstract class Initial implements MyState {
+abstract class Initial implements HomeState {
   const factory Initial() = _$InitialImpl;
 }
 
@@ -208,7 +208,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$MyStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$HomeStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -222,7 +222,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'MyState.loading()';
+    return 'HomeState.loading()';
   }
 
   @override
@@ -309,7 +309,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements MyState {
+abstract class _Loading implements HomeState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -324,7 +324,7 @@ abstract class _$$SuccessImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$MyStateCopyWithImpl<$Res, _$SuccessImpl>
+    extends _$HomeStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
@@ -359,7 +359,7 @@ class _$SuccessImpl implements _Success {
 
   @override
   String toString() {
-    return 'MyState.success(objects: $objects)';
+    return 'HomeState.success(objects: $objects)';
   }
 
   @override
@@ -455,7 +455,7 @@ class _$SuccessImpl implements _Success {
   }
 }
 
-abstract class _Success implements MyState {
+abstract class _Success implements HomeState {
   const factory _Success(final List<ObjectModel> objects) = _$SuccessImpl;
 
   List<ObjectModel> get objects;
@@ -475,7 +475,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$MyStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$HomeStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -505,7 +505,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'MyState.error(message: $message)';
+    return 'HomeState.error(message: $message)';
   }
 
   @override
@@ -600,7 +600,7 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements MyState {
+abstract class _Error implements HomeState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
